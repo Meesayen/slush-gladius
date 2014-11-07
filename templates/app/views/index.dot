@@ -1,0 +1,38 @@
+<!doctype html>
+
+<title>{{= it.content.title}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="stylesheet" type="text/css" href="/<%= outputStyles %>main.css">
+
+
+<h2>Ah! This is awesome.</h2>
+
+<p>Look how cool I am</p>
+
+<p>unescaped url below</p>
+<br>
+<br>
+
+{{~ it.vendorScripts}}
+<script type="text/javascript" src="{{url}}"></script>
+{{~}}
+
+<!-- For Debugging Purposes Only -->
+{{? it.__dev__}}
+  <script type="text/javascript" src="/<%= outputScripts %>mock-server.js"></script>
+{{?}}
+
+
+<!-- Core Scripts -->
+<script type="text/javascript" src="/<%= outputScripts %>templates.js"></script>
+<script type="text/javascript" src="/<%= outputScripts %>core.js"></script>
+
+<!-- App Script -->
+<script type="text/javascript" src="/<%= outputScripts %>{{= it.appScript}}"></script>
+
+<!-- LiveReloading -->
+{{? it.__dev__}}
+  <script type="text/javascript" src="http://localhost:35729/livereload.js?snipver=1"></script>
+{{?}}

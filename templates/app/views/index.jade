@@ -1,0 +1,17 @@
+extends mainlayout
+
+include mixins
+
+block 'content'
+  h2 Ah! This is awesome.
+
+  p Look how cool I am
+
+  p unescaped url below
+  br
+
+  mixin taggedAnchor('//www.google.com', 'Google')
+
+  br
+  br
+

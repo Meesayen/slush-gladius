@@ -1,0 +1,13 @@
+<div class="awesome-list">
+  <div>
+    <p>Here goes an awesome list!</p>
+  </div>
+
+  <h2>{{= it.title}}</h2>
+
+  <ul>
+    {{~ it.items :val}}
+      <li>{{= val.label}}</li>
+    {{~}}
+  </ul>
+</div>

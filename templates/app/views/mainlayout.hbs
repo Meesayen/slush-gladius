@@ -1,0 +1,36 @@
+{{#block "header"}}
+  <!doctype html>
+
+  <title>{{content.title}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <link rel="stylesheet" type="text/css" href="/<%= outputStyles %>main.css">
+{{/block}}
+
+{{#block "content"}}
+{{/block}}
+
+{{#block "footer"}}
+  {{> vendorscripts}}
+
+  {{!-- For Debugging Purposes Only --}}
+  {{#if __dev__}}
+    <script type="text/javascript" src="/<%= outputScripts %>mock-server.js"></script>
+  {{/if}}
+
+
+  {{!-- Core Scripts --}}
+  <script type="text/javascript" src="/<%= outputScripts %>handlebars.helpers.js"></script>
+  <script type="text/javascript" src="/<%= outputScripts %>templates.js"></script>
+  <script type="text/javascript" src="/<%= outputScripts %>core.js"></script>
+
+  {{!-- App Script --}}
+  <script type="text/javascript" src="/<%= outputScripts %>{{appScript}}"></script>
+
+  {{!-- LiveReloading --}}
+  {{#if __dev__}}
+    <script type="text/javascript" src="http://localhost:35729/livereload.js?snipver=1"></script>
+  {{/if}}
+
+{{/block}}

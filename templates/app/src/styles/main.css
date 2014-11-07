@@ -1,0 +1,28 @@
+.box {
+  color: #fe33ac;
+  border-color: #fdcdea;
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  transform: translateX(10px)
+}
+.box div {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)
+}
+.awesome-list {
+  display: inline-block;
+  -webkit-transform: translateX(20px) translateY(100px);
+  -ms-transform: translateX(20px) translateY(100px);
+  transform: translateX(20px) translateY(100px);
+  box-sizing: border-box;
+  padding: 20px;
+  width: 400px;
+  background: #eee;
+  border-radius: 4px;
+  color: #333;
+  font-family: verdana;
+  vertical-align: top
+}
+.awesome-list li {
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.7)
+}
