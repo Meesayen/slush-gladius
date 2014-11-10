@@ -1,4 +1,4 @@
-import base from './routes/base<%= sourceEsnextModuleExt %>';
+import * as base from './routes/base<%= sourceEsnextModuleExt %>';
 
 export default {
   '/api/testing': base.testing,

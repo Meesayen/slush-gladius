@@ -1,7 +1,7 @@
 import { deserialize } from '../core/utils<%= sourceEsnextModuleExt %>';
 import registry from '../config/storeRegistry<%= sourceEsnextModuleExt %>';
 import Store from '../core/store<%= sourceEsnextModuleExt %>';
-import tpl from '../core/tpl<%= sourceEsnextModuleExt %>';
+import * as tpl from '../core/tpl<%= sourceEsnextModuleExt %>';
 
 var store = new Store(registry);
 

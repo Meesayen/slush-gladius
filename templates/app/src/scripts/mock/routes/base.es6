@@ -41,12 +41,3 @@ export var awesomeList = {
     message: 'Broken!'
   })
 };
-
-// Little trick until es6-module-transpiler would support the new syntax:
-// import { * as moduleName } from './moduleName';
-export default {
-  testing: testing,
-  one: one,
-  last: last,
-  awesomeList: awesomeList
-};

@@ -33,7 +33,7 @@ var defaults = (function () {
       base: 'src/',
       styles: 'styles/',
       scripts: 'scripts/',
-      esnextExtension: '.es6',
+      esnextExtension: '.es6.js',
       templates: 'views/',
       partials: 'partials/'
     },

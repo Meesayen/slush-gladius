@@ -97,7 +97,7 @@ So, thanks goes to:
   long, so thank you all.
 
 
-[1]:http://github.com/Meesayen/es6-boilerplate
+[1]:http://github.com/Meesayen/gladius-draft
 [2]:http://github.com/esnext/esnext
 [3]:http://github.com/facebook/regenerator
 [4]:http://github.com/gulpjs/gulp

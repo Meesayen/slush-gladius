@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "gulp": "^3.8.7",
-    "es6-gulp-boilerplate": "^0.7.0"
+    "gladius-forge": "^1.0.0"
   },
   "subdomain": "",
   "engines": {
