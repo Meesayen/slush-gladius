@@ -49,7 +49,7 @@ var defaults = (function () {
 var styleFilters = [
   '!' + __dirname + '/**/*.less',
   '!' + __dirname + '/**/*.sass',
-  '!' + __dirname + '/**/*.sassCompass',
+  '!' + __dirname + '/**/*.scssCompass',
   '!' + __dirname + '/**/*.stylus',
   '!' + __dirname + '/**/*.myth',
   '!' + __dirname + '/**/*.none'
@@ -126,7 +126,7 @@ gulp.task('default', function(done) {
     choices: [
       'Less',
       'Sass',
-      'Sass+Compass',
+      'SCSS+Compass',
       'Stylus',
       'Myth',
       'None'
@@ -232,7 +232,7 @@ gulp.task('default', function(done) {
     styleFilters = styleFilters.filter(function(f) {
       return !~f.indexOf(answers.stylesPlugin);
     }).map(function(f) {
-      return f.replace('.sassCompass', '.scss').replace('.none', '.css')
+      return f.replace('.scssCompass', '.scss').replace('.none', '.css')
           .replace('.stylus', '.styl');
     });
     templatesFilters = templatesFilters.filter(function(f) {

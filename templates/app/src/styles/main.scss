@@ -3,7 +3,7 @@ $base: #f938ab;
 @mixin box-shadow($style, $c) {
   box-shadow: $style $c;
 }
-@mixin box-shadow-alpha($style, $alpha: 50%)) {
+@mixin box-shadow-alpha($style, $alpha: 50%) {
   @include box-shadow($style, rgba(0, 0, 0, $alpha));
 }
 .box {

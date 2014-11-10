@@ -15,8 +15,8 @@
 <br>
 <br>
 
-{{~ it.vendorScripts}}
-<script type="text/javascript" src="{{url}}"></script>
+{{~ it.vendorScripts :val}}
+<script type="text/javascript" src="{{= val.url}}"></script>
 {{~}}
 
 <!-- For Debugging Purposes Only -->
