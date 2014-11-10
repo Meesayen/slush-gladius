@@ -6,7 +6,7 @@ deploy:
   provider: npm
   email: gvg.fede@gmail.com
   api_key:
-    secure: BzT8uo/EMU7XW/5jl7EeITW6OGEScQ+tk1ndubdpScf1vnHoYsuyYBGsEkPJ16HXBcjVcCmE3bmGcBejRgviwQToJaYU3MRCWIo8jYkaDDieIoTMavdhKdyPTz7yIBT+FNx72SxBlEBb4y1WT/rC+mNFQJG4rCPqKdg9thzMIFg=
+    secure: M5Nce98pmmnn6dUd594DxmRZCSTnMqU2mzznZMvcYFiP/gAa33ZS/Tai+UkpQBpJeGmn1EyPdqkUsqLVaVzIf5zivgzUcUXZFNBoc3CJOTNljD5pVC5OhSbvz1V490xVxPKprBb+akM4JFDd9LtDADNeNcknybKBuVVUWQ/96vI=
   on:
     tags: true
     repo: Meesayen/slush-gladius
