@@ -10,12 +10,12 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "files": [
-    "slushfile.js"
-  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/Meesayen/slush-gladius.git"
+  },
+  "main": "slushfile.js",
+  "scripts": {
   },
   "keywords": [
     "slushgenerator",
