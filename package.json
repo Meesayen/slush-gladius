@@ -1,6 +1,6 @@
 {
   "name": "slush-gladius",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Slush generator for bleeding edge weapo... ehr, applications!",
   "license": "MIT",
   "author": {
@@ -15,8 +15,7 @@
     "url": "git://github.com/Meesayen/slush-gladius.git"
   },
   "main": "slushfile.js",
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [
     "slushgenerator",
     "esnext",
