@@ -17,11 +17,7 @@ module.exports = function(config) {
       '<%= sourceScripts %>**/*.test<%= sourceEsnextExt %>': ['browserify']
     },
     browserify: {
-      transform: [
-        // Hacking the way karma-bro injects transforms to pass options to
-        // the esnextify transform.
-        [{fileExt: '<%= sourceEsnextExt %>'}, 'esnextify']
-      ],
+      transform: [['babelify', {ignore: /faker\.js/}]],
       basedir: '<%= sourceBase %>'
     },
     colors: true,
@@ -29,7 +25,7 @@ module.exports = function(config) {
     port: 9876,
     logLevel: config.LOG_INFO,
     // browsers: ['Chrome'],
-    browsers: ['PhantomJS'],
+    browsers: ['PhantomJS2'],
     singleRun: true,
     autoWatch: true
   });

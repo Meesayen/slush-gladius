@@ -73,7 +73,7 @@ gladius.setupTasks({
     src: []
   },
   'bundle-js:dev': {
-    deps: ['bundle-mock-server', '!lint', '!esnext'],
+    deps: ['bundle-mock-server', '!lint', '!babelify'],
     src: []
   },
   'lint': {
@@ -99,7 +99,7 @@ gulp.task('publish-helpers', function() {
 });<% } %>
 
 /* Mock server bundling */
-gulp.task('bundle-mock-server', ['lint', 'esnext'], function() {
+gulp.task('bundle-mock-server', ['lint', 'babelify'], function() {
   return gulp.src(['<%= sourceBase %>temp/mock/server<%= sourceEsnextExt %>'])
   .pipe($.browserify({
     insertGlobals: false,
