@@ -25,7 +25,7 @@
   "devDependencies": {
     "gulp": "^3.8.7",
     "babelify": "^6.0.0",
-    "gladius-forge": "^1.0.0"
+    "gladius-forge": "^2.0.0"
   },
   "subdomain": "",
   "engines": {
